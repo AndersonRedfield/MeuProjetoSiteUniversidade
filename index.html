@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universidade Exemplar</title>
+  <link rel="stylesheet" href="Universidade.css">
+</head>
+<body>
+    <!-- Cabeçalho com logo e menu -->
+    <header>
+      <div class="header-content">
+        <img src="./Imagens Do Projeto Site Universidade/Universidade.jpg" width="150px" alt="Logo"> <!-- Tamanho da logo ajustado -->
+        <div class="university-title">Universidade Exemplar</div>
+      </div>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav id="menu" class="menu">
+          <a href="#home" onclick="closeMenu()">Home</a>
+          <a href="#quemsomos" onclick="closeMenu()">Quem Somos</a>
+          <a href="#contato" onclick="closeMenu()">Contato</a>
+          <a href="#aluno" onclick="closeMenu()">Sou Aluno</a>
+          <a href="#professor" onclick="closeMenu()">Sou Professor</a>
+          <a href="#volte" onclick="closeMenu()">Volte A Estudar</a>
+          <a href="#inscricao" onclick="closeMenu()">Acompanhe Sua Inscrição</a>
+      </nav>
+  </header>
+  
+    <!-- Formulário de Cadastro -->
+    <section id="cadastro">
+      <h2 class="form-title">Formulário de Cadastro</h2>
+      <form id="form-cadastro" class="form-container">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+  
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" required>
+  
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" maxlength="11" pattern="\d{11}" title="Digite apenas números (11 dígitos)" required>
+  
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+  
+        <div class="buttons">
+          <button type="reset">Limpar</button>
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </section>
+
+  <!-- Seções com imagens e parágrafos centralizados -->
+  <section id="home">
+    <h2>Home</h2>
+    <img src="./Imagens Do Projeto Site Universidade/Pessoas Chegando Na Universidade.jpg" alt="Imagem Home">
+    <p>Bem-vindo à Universidade Exemplar, um lugar onde o futuro começa e as oportunidades são infinitas.</p>
+    <p>Aqui, nossa missão é capacitar mentes brilhantes a alcançar seu máximo potencial.</p>
+    <p>Com programas acadêmicos de ponta e infraestrutura moderna, proporcionamos uma experiência de aprendizado única.</p>
+    <p>Nossos alunos são incentivados a inovar, criar e fazer a diferença em suas áreas de atuação.</p>
+    <p>Desde cursos de graduação até programas avançados, há um mundo de conhecimento esperando por você.</p>
+    <p>Professores dedicados e apaixonados pelo ensino fazem parte do nosso quadro, prontos para apoiar você em cada etapa.</p>
+    <p>Na Universidade Exemplar, cada aula é uma nova descoberta e cada projeto, um passo em direção ao sucesso.</p>
+    <p>Estamos comprometidos com uma educação inclusiva, diversificada e de qualidade.</p>
+    <p>Junte-se a nós e faça parte de uma comunidade acadêmica vibrante e acolhedora.</p>
+    <p>Nossos laboratórios de última geração estão abertos para você explorar, experimentar e aprender.</p>
+    <p>Investimos em tecnologia e inovação para oferecer uma formação que prepara para os desafios do mercado.</p>
+    <p>Quer você esteja começando sua carreira ou buscando uma especialização, temos o curso ideal para você.</p>
+    <p>Prepare-se para um ambiente que valoriza a curiosidade, a criatividade e o pensamento crítico.</p>
+    <p>Somos mais que uma universidade: somos uma ponte para o futuro e uma rede de apoio ao seu sucesso.</p>
+    <p>Inicie hoje sua jornada conosco e descubra o que significa ser um aluno da Universidade Exemplar.</p>
+  </section>
+
+  <section id="quem-somos">
+    <h2>Quem Somos</h2>
+    <img src="./Imagens Do Projeto Site Universidade/Imagens de Universidades Quem Somos.jpg" alt="Imagem Quem Somos">
+    <p>A Universidade Exemplar é referência em excelência acadêmica e inovação educacional.</p>
+    <p>Nosso compromisso é com a formação integral e com o desenvolvimento das habilidades de nossos estudantes.</p>
+    <p>Com mais de 50 anos de tradição, estamos entre as principais universidades do país.</p>
+    <p>Nossa equipe de professores e pesquisadores é composta por especialistas renomados em suas áreas.</p>
+    <p>Promovemos a inclusão, a diversidade e o respeito em todas as esferas de nossa comunidade acadêmica.</p>
+    <p>Investimos constantemente em tecnologia e infraestrutura para uma experiência de aprendizado moderna e eficaz.</p>
+    <p>Nossa universidade é movida pela paixão pelo conhecimento e pelo impacto positivo na sociedade.</p>
+    <p>Formamos profissionais preparados para atuar de forma ética, responsável e com competência no mercado.</p>
+    <p>Acreditamos na educação como agente de transformação e na importância de formar líderes globais.</p>
+    <p>Estamos sempre em busca de parcerias que ampliem as oportunidades de nossos estudantes.</p>
+    <p>Nossos programas acadêmicos são desenvolvidos para atender às demandas contemporâneas do mercado.</p>
+    <p>Trabalhamos lado a lado com nossos alunos para ajudá-los a alcançar suas metas e sonhos.</p>
+    <p>Somos uma universidade que valoriza o pensamento crítico e incentiva a pesquisa e a inovação.</p>
+    <p>Aqui, seu aprendizado e desenvolvimento pessoal são nossa maior prioridade.</p>
+    <p>Seja bem-vindo à Universidade Exemplar, onde o seu sucesso é o nosso compromisso.</p>
+  </section>
+
+  <section id="sou-aluno">
+    <h2>Sou Aluno</h2>
+    <img src="./Imagens Do Projeto Site Universidade/Pessoas Universidade 1.jpg" alt="Imagem Sou Aluno">
+    <p>Como aluno da Universidade Exemplar, você faz parte de uma comunidade especial.</p>
+    <p>Contamos com uma estrutura dedicada para apoiar seu aprendizado e crescimento.</p>
+    <p>Nossos alunos têm acesso a recursos de alta qualidade para enriquecer sua formação.</p>
+    <p>Estamos sempre investindo em novas tecnologias e métodos de ensino inovadores.</p>
+    <p>Desenvolva habilidades críticas para o mercado e para a vida.</p>
+    <p>Aqui, o conhecimento vai além da sala de aula: é uma experiência de vida.</p>
+    <p>Tenha acesso a mentores e professores altamente capacitados.</p>
+    <p>Contribuímos para a formação de profissionais éticos e responsáveis.</p>
+    <p>Inicie projetos e participe de atividades que estimulam sua criatividade.</p>
+    <p>Nossa infraestrutura está pronta para oferecer um ambiente de aprendizado único.</p>
+    <p>Faça parte de uma rede que valoriza seu sucesso e sua formação.</p>
+    <p>Oferecemos apoio em todas as etapas de sua trajetória acadêmica.</p>
+    <p>Explore nossas bibliotecas, laboratórios e recursos online.</p>
+    <p>Participe de workshops, palestras e eventos exclusivos.</p>
+    <p>Estamos comprometidos com seu sucesso e com seu futuro.</p>
+  </section>
+
+  <section id="sou-professor">
+    <h2>Sou Professor</h2>
+    <img src="./Imagens Do Projeto Site Universidade/Professor Dando Aula.jpg" alt="Imagem Sou Professor">
+    <p>Ser professor na Universidade Exemplar é fazer parte de uma missão de excelência.</p>
+    <p>Valorizamos o conhecimento, a dedicação e o impacto de cada professor em nossa comunidade.</p>
+    <p>Oferecemos uma estrutura completa para apoiar o ensino de qualidade.</p>
+    <p>Nossos professores são parte fundamental na formação de futuros líderes e profissionais.</p>
+    <p>Aqui, você encontra um ambiente que valoriza a pesquisa e a inovação.</ ```html
+    <p>Contamos com programas de incentivo e desenvolvimento contínuo para docentes.</p>
+    <p>Trabalhe em uma instituição que preza pelo crescimento acadêmico e humano.</p>
+    <p>Colaboramos com educadores para aprimorar cada dia mais nosso ensino.</p>
+    <p>Temos uma estrutura de suporte para que cada aula seja uma experiência transformadora.</p>
+    <p>Invista no seu crescimento como educador e faça a diferença na vida dos alunos.</p>
+    <p>A Universidade Exemplar está ao seu lado em cada etapa da sua carreira.</p>
+    <p>Seja parte de uma equipe que valoriza a excelência e o compromisso.</p>
+    <p>Desenvolva projetos que levem a educação para novos patamares.</p>
+    <p>Contribua para formar uma geração de profissionais inovadores e preparados.</p>
+    <p>Na Universidade Exemplar, cada professor é uma peça essencial em nossa missão.</p>
+  </section>
+
+  <section id="volte-estudar">
+    <h2>Volte a Estudar</h2>
+    <img src="./Imagens Do Projeto Site Universidade/Pessoas Universidade 2.jpg" alt="Imagem Volte a Estudar">
+    <p>Retomar os estudos nunca foi tão fácil e acessível. Na Universidade Exemplar, oferecemos programas flexíveis que se ajustam à sua rotina.</p>
+    <p>Se você está buscando uma nova formação ou quer continuar seu aprendizado, nosso time está pronto para te apoiar nessa jornada.</p>
+    <p>Oferecemos modalidades de cursos presenciais e a distância para atender a diferentes necessidades.</p>
+    <p>Voltar a estudar é uma decisão que transforma vidas, e nós estamos aqui para ajudá-lo a alcançar suas metas educacionais.</p>
+    <p>Com foco no aluno, oferecemos o suporte necessário para um retorno rápido e eficiente ao ambiente acadêmico.</p>
+    <p>Temos programas de reintegração para alunos que desejam retomar seus cursos ou ingressar em novas áreas do conhecimento.</p>
+    <p>A Universidade Exemplar acredita que nunca é tarde para aprender e crescer. Nossos cursos são feitos sob medida para quem busca uma nova carreira.</p>
+    <p>Não importa o seu tempo fora da educação: aqui, você encontrará um ambiente acolhedor para seu desenvolvimento.</p>
+    <p>Seja você um profissional buscando atualização ou alguém que quer começar uma nova trajetória, temos a solução ideal.</p>
+    <p>Nosso campus e plataforma online oferecem os recursos necessários para garantir seu aprendizado de qualidade.</p>
+    <p>Não importa se você deseja estudar à noite ou nos fins de semana, temos horários flexíveis para atender sua agenda.</p>
+    <p>A Universidade Exemplar investe em métodos inovadores que garantem um ensino de qualidade em qualquer fase da sua vida.</p>
+    <p>Voltar a estudar é um investimento no seu futuro e na sua felicidade. Venha ser parte de nossa comunidade acadêmica.</p>
+    <p>Nosso objetivo é proporcionar a você todas as ferramentas necessárias para garantir seu sucesso acadêmico e profissional.</p>
+    <p>A Universidade Exemplar é mais do que um lugar de estudo: é um lugar de transformação.</p>
+  </section>
+
+  <section id="acompanhe-inscricao">
+    <h2>Acompanhe Sua Inscrição</h2>
+    <img src="./Imagens Do Projeto Site Universidade/Pessoas Acompanhando Sua Inscrição.jpg" alt="Imagem Acompanhando Sua Inscrição">
+    <p>Acompanhe sua inscrição de forma simples e eficiente diretamente de nosso portal. Tudo o que você precisa está ao seu alcance.</p>
+    <p>Com nosso sistema online, você pode ver todas as etapas do seu processo seletivo em tempo real, sem complicações.</p>
+    <p>Aqui, você tem controle total sobre o andamento de sua inscrição e qualquer dúvida pode ser resolvida com facilidade.</p>
+    <p>Seja informado sobre a data de resultado, documentos necessários e próximas etapas do processo seletivo de forma clara e organizada.</p>
+    <p>Estamos com você em cada passo, garantindo que sua inscrição seja processada de maneira eficiente e sem erros.</p>
+    <p>Com a nossa plataforma intuitiva, você pode atualizar seus dados, anexar documentos e acompanhar o status da sua candidatura.</p>
+    <p>O portal oferece notificações para que você esteja sempre ciente de cada mudança importante em sua inscrição.</p>
+    <p>Acompanhe as datas de entrevistas, exames e prazos com facilidade, evitando qualquer confusão ou atraso.</p>
+    <p>Não se preocupe mais com os detalhes: nossa plataforma faz tudo por você, e nós estamos aqui para garantir que sua inscrição aconteça sem problemas.</p>
+    <p>Acompanhamento transparente e ágil é o que oferecemos a todos os nossos candidatos. Faça parte de nossa história de sucesso.</p>
+    <p>Com apenas alguns cliques, você tem acesso a todas as informações necessárias para continuar sua jornada acadêmica.</p>
+    <p>O acompanhamento de inscrição é essencial para garantir que tudo ocorra conforme o esperado. Conosco, você tem total segurança.</p>
+    <p>Fique tranquilo sabendo que, com nossa ajuda, você nunca perderá um prazo importante ou uma etapa crucial.</p>
+    <p>A Universidade Exemplar facilita todo o processo, para que você se concentre no que realmente importa: sua educação.</p>
+    <p>Comunique-se com a nossa equipe de suporte para resolver qualquer questão que possa surgir ao longo do processo de inscrição.</p>
+  </section>  
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <img src="./Imagens Do Projeto Site Universidade/Contato Universidade.webp" alt="Imagem Contato">
+    <p>Entre em contato conosco para mais informações sobre cursos, programas e serviços.</p>
+    <p>Nossa equipe de atendimento está disponível para responder às suas dúvidas.</p>
+    <p>Encontre canais rápidos e fáceis para comunicar-se com nossa universidade.</p>
+    <p>Oferecemos suporte para questões acadêmicas, financeiras e administrativas.</p>
+    <p>Você pode nos contatar por telefone, e-mail ou redes sociais.</p>
+    <p>Estamos aqui para ajudar e guiar você em sua jornada educacional.</p>
+    <p>Conte com a Universidade Exemplar para um atendimento eficiente e acolhedor.</p>
+    <p>A qualquer momento, estamos prontos para oferecer informações detalhadas e úteis.</p>
+    <p>Acompanhe nossas atualizações e fique por dentro de tudo o que acontece.</p>
+    <p>Nosso compromisso é estar sempre próximo de você, nossos alunos e nossa comunidade.</p>
+    <p>Respondemos suas questões com clareza e rapidez.</p>
+    <p>Quer saber mais sobre nossos cursos? Fale com a nossa equipe agora mesmo!</p>
+    <p>Compromisso, dedicação e atenção: é assim que tratamos cada contato.</p>
+    <p>Tem dúvidas sobre a inscrição? Estamos a um clique de distância.</p>
+    <p>Universidade Exemplar, sempre acessível para você.</p>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>Desenvolvido Por <a href="http://wa.me/5521998026461">Anderson Pacheco</a> - Todos os Direitos Reservados © Universidade Exemplar</p>
+  </footer>
+
+  <!-- Script para controlar a exibição do menu -->
+  <script>
+    // Função para alternar a visibilidade do menu
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('active'); // Alterna a classe 'active' para mostrar ou esconder o menu
+    }
+
+    // Função para fechar o menu ao clicar em um item
+    function closeMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.remove('active'); // Remove a classe 'active' para esconder o menu
+    }
+
+    // Função para fechar o menu ao clicar fora dele
+    window.onclick = function(event) {
+      const menu = document.getElementById('menu');
+      if (!event.target.matches('.menu-toggle') && menu.classList.contains('active')) {
+        menu.classList.remove('active'); // Remove a classe 'active' para esconder o menu
+      }
+    }
+  </script>
+</body>
+</html>
